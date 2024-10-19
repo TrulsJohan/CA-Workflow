@@ -10,5 +10,24 @@
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "rules": {}
+    "rules": {
+      // Possible Errors
+      "no-console": "warn",
+      "no-dupe-args": "error",
+      "no-extra-semi": "error",
+
+      // Best Practices
+      "eqeqeq": ["error", "always"],
+      "no-empty": "warn",
+      "no-multi-spaces": "error",
+
+      // Variables
+      "no-undef": "error",
+      "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
+
+      // Stylistic Issues
+      "indent": ["error", 2],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+    }
   }
