@@ -31,14 +31,14 @@
     "bootstrap-dark-5": "^1.1.3"
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "eslint",
       "prettier --write"
     ],
-    "*.html": [
+    "src/**/*.html": [
       "prettier --write"
     ],
-    "*.css": [
+    "src/**/*.css": [
       "prettier --write"
     ]
   }
