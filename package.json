@@ -6,7 +6,8 @@
   "scripts": {
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
-    "lint": "eslint src/**/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --fix",
     "format": "prettier -w src/**/*.html",
     "test": "jest",
     "prepare": "husky install"
