@@ -6,6 +6,18 @@
       "jest": true
     },
     "extends": "eslint:recommended",
+    "overrides": [
+	    {
+	      "files": ["**/*.cy.js"],
+	      "env": { "cypress/globals": true },
+	      "plugins": ["cypress"],
+	      "extends": ["plugin:cypress/recommended"],
+	      "rules": {
+	        "cypress/no-unnecessary-waiting": "off",
+	        "no-unused-vars": "off"
+	      }
+	    }
+	  ],
     "parserOptions": {
       "ecmaVersion": "latest",
       "sourceType": "module"
@@ -23,10 +35,7 @@
 
       // Variables
       "no-undef": "error",
-      "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
-
-      // Stylistic Issues
-      "semi": ["error", "always"]
+      "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }]
     }
   }
   
